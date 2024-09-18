@@ -1,3 +1,4 @@
+//Criado por Pedro Henrique (divirta-se!:)
 import java.util.Scanner;
 import java.util.HashMap;
 import java.util.Map;
