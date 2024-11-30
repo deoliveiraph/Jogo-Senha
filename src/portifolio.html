@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Pedro Henrique</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="intro">
+    <h1>Hello, <br>This is <span>Pedro Henrique</span>, I'm a Professional <span>Software Developer</span>.</h1>
+    <div class="buttons">
+        <button>Contact Me</button>
+        <button>Get Resume</button>
+    </div>
+    <div class="social-links">
+        <a href="https://github.com/deoliveiraph" target="_blank">GitHub</a>
+        <a href="https://www.instagram.com/p_eagaa?igsh=MWgxbnR1am14Z2ZlZw%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+    </div>
+</section>
+
+<section class="code">
+        <pre>
+const coder = {
+    name: 'Pedro Henrique de Oliveira Silveira',
+    skills: ['React', 'NextJS', 'Redux', 'Express', 'MySql', 'MongoDB', 'Docker', 'AWS'],
+    hardWorker: true,
+    quickLearner: true,
+    problemSolver: true,
+    hireable: function() {
+        return this.hardWorker && this.problemSolver && this.skills.length >= 5;
+    }
+};
+        </pre>
+</section>
+
+<section class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+        <h3>Jogo da Senha</h3>
+        <p>Este é um jogo de senha desenvolvido por mim. Clique no botão abaixo para jogar!</p>
+        <button onclick="window.location.href='link_para_o_jogo'">Play Game</button>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
