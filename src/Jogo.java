@@ -2,11 +2,11 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Jogo {
-    private final Scanner scanner = new Scanner(System.in);
+    private final Scanner lerDados = new Scanner(System.in);
     private final MapaDeCores mapaDeCores = new MapaDeCores();
     private final GeradorDeSenha geradorDeSenha = new GeradorDeSenha();
     private final ValidadorDeTentativa validadorDeTentativa = new ValidadorDeTentativa();
-    private final ManipuladorDeEntrada manipuladorDeEntrada = new ManipuladorDeEntrada(scanner, mapaDeCores);
+    private final ManipuladorDeEntrada manipuladorDeEntrada = new ManipuladorDeEntrada(lerDados, mapaDeCores);
 
     public void iniciar() {
         boolean jogarNovamente;
@@ -57,7 +57,7 @@ public class Jogo {
 
     private boolean desejaJogarNovamente() {
         while (true) {
-            String resposta = scanner.nextLine().trim().toLowerCase();
+            String resposta = lerDados.nextLine().trim().toLowerCase();
             if (resposta.equals("sim")) {
                 return true;
             } else if (resposta.equals("nao")) {

@@ -2,11 +2,11 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class ManipuladorDeEntrada {
-    private final Scanner scanner;
+    private final Scanner lerDados;
     private final MapaDeCores mapaDeCores;
 
-    public ManipuladorDeEntrada(Scanner scanner, MapaDeCores mapaDeCores) {
-        this.scanner = scanner;
+    public ManipuladorDeEntrada(Scanner lerDados, MapaDeCores mapaDeCores) {
+        this.lerDados = lerDados;
         this.mapaDeCores = mapaDeCores;
     }
 
@@ -16,7 +16,7 @@ public class ManipuladorDeEntrada {
 
         while (!entradaValida) {
             System.out.print("Escolha as cores para a tentativa (digite os numeros correspondentes separados por espaco): ");
-            String[] entradas = scanner.nextLine().split(" ");
+            String[] entradas = lerDados.nextLine().split(" ");
 
             if (entradas.length != 4) {
                 System.out.println("Por favor, insira exatamente 4 numeros.");
